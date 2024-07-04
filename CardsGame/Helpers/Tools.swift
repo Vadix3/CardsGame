@@ -12,8 +12,23 @@ class Tools {
     
     static let userNameKey :String = "userName"
     static let sideKey :String = "userSide"
-    
+    static let winnerName :String = "winnerName"
+    static let winnerScore :String = "winnerScore"
+    static let startToGameTransition = "startToGame"
+    static let gameToWinTransition = "gameToWin"
+    static let winToStartTransition = "winToStart"
+    static let USER_DEFAULTS = "userDefaults"
+    static let CLOUD = "cloud"
+
     private init() { }
+    
+    /**
+     This is the move to next scene callback function
+     */
+    static func moveToScene(scene:String,controller:UIViewController){
+        print("Moving to next scene")
+        controller.performSegue(withIdentifier: scene, sender: controller)
+    }
     
     /**
      This function will show a toast with a message

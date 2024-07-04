@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView autoresizesSubviews="NO" opaque="NO" contentMode="center" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JY7-Jy-co7">
-                                <rect key="frame" x="64" y="10" width="783" height="373"/>
+                                <rect key="frame" x="5" y="10" width="842" height="373"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left_globe" translatesAutoresizingMaskIntoConstraints="NO" id="fCZ-Ud-3Nj">
                                         <rect key="frame" x="0.0" y="0.0" width="214" height="373"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Hc6-ZI-wlE">
-                                        <rect key="frame" x="317.66666666666669" y="85" width="149.66666666666669" height="203"/>
+                                        <rect key="frame" x="347.33333333333331" y="85" width="149.66666666666669" height="203"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5Y-vr-cYe">
                                                 <rect key="frame" x="0.0" y="0.0" width="149.66666666666666" height="34.333333333333336"/>
@@ -47,7 +47,7 @@
                                         </subviews>
                                     </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_globe" translatesAutoresizingMaskIntoConstraints="NO" id="cgh-lq-rl8">
-                                        <rect key="frame" x="571" y="0.0" width="212" height="373"/>
+                                        <rect key="frame" x="630" y="0.0" width="212" height="373"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
@@ -66,12 +66,12 @@
                         <outlet property="launch_BTN_start" destination="4NR-dK-wH1" id="bEY-LY-XOK"/>
                         <outlet property="launch_LBL_title" destination="a5Y-vr-cYe" id="Raa-TU-eer"/>
                         <outlet property="launch_TXT_name" destination="fQz-m9-zC9" id="D1Q-cg-vq9"/>
-                        <segue destination="Ix4-OE-nh8" kind="presentation" identifier="showNextScene" id="eBt-ji-Azx"/>
+                        <segue destination="Ix4-OE-nh8" kind="presentation" identifier="startToGame" id="eBt-ji-Azx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-32" y="683"/>
+            <point key="canvasLocation" x="34" y="1300"/>
         </scene>
         <!--Game Controller-->
         <scene sceneID="5An-Wg-RSo">
@@ -156,11 +156,67 @@
                         <outlet property="game_IMG_pic2" destination="BT8-wL-Plo" id="WSI-r1-avu"/>
                         <outlet property="game_LBL_title1" destination="MVG-ze-Xln" id="MXE-i1-ofw"/>
                         <outlet property="game_LBL_title2" destination="rXU-OU-KE1" id="L1N-0c-W6Y"/>
+                        <segue destination="COk-1M-egW" kind="presentation" identifier="gameToWin" id="K8f-eO-9cM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z0j-4W-Bas" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="725" y="621"/>
+        </scene>
+        <!--Win Controller-->
+        <scene sceneID="Kzd-om-taj">
+            <objects>
+                <viewController id="COk-1M-egW" customClass="WinController" customModule="CardsGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ulc-m7-Dqc">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="pi8-kR-Rii">
+                                <rect key="frame" x="200" y="70" width="452" height="253"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player won!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CxV-JN-WNu">
+                                        <rect key="frame" x="0.0" y="0.0" width="452" height="51"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:60" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lo7-Zf-nIy">
+                                        <rect key="frame" x="0.0" y="101" width="452" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51j-2D-fGg">
+                                        <rect key="frame" x="0.0" y="202" width="452" height="51"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="MAIN MENU"/>
+                                        <connections>
+                                            <action selector="goToMainMenu:" destination="COk-1M-egW" eventType="touchUpInside" id="qqi-ur-c6a"/>
+                                            <action selector="onStartClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JiM-C7-Pf2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="adD-rL-jlV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="adD-rL-jlV" firstAttribute="bottom" secondItem="pi8-kR-Rii" secondAttribute="bottom" constant="70" id="C16-pI-ZGe"/>
+                            <constraint firstItem="pi8-kR-Rii" firstAttribute="top" secondItem="adD-rL-jlV" secondAttribute="top" constant="70" id="HZA-gm-2QD"/>
+                            <constraint firstItem="adD-rL-jlV" firstAttribute="trailing" secondItem="pi8-kR-Rii" secondAttribute="trailing" constant="200" id="eww-dO-KxG"/>
+                            <constraint firstItem="pi8-kR-Rii" firstAttribute="leading" secondItem="adD-rL-jlV" secondAttribute="leading" constant="200" id="zbw-CB-HDN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="win_BTN_menuBtn" destination="51j-2D-fGg" id="Xv4-kB-Cse"/>
+                        <outlet property="win_LBL_winnerName" destination="CxV-JN-WNu" id="iOY-ld-wmY"/>
+                        <outlet property="win_LBL_winnerScore" destination="Lo7-Zf-nIy" id="6xV-Ql-nh3"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="winToStart" id="Bip-YC-jkb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iAK-5B-E0D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="741.54929577464793" y="1954.9618320610687"/>
         </scene>
     </scenes>
     <resources>

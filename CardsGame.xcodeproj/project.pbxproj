@@ -7,23 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0EAD4132C35DC1600179176 /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAD4122C35DC1600179176 /* LocationController.swift */; };
+		B0EAD4152C35ECE500179176 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAD4142C35ECE500179176 /* Toast.swift */; };
+		B0EAD4172C35F4CF00179176 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAD4162C35F4CF00179176 /* Tools.swift */; };
+		B0EAD4192C35FCB500179176 /* GwentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAD4182C35FCB500179176 /* GwentCard.swift */; };
+		B0EAD41B2C35FCD000179176 /* GwentUICard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAD41A2C35FCD000179176 /* GwentUICard.swift */; };
+		B0EAD41D2C35FD0200179176 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAD41C2C35FD0200179176 /* Player.swift */; };
+		B0EAD4272C3610C600179176 /* WinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAD4262C3610C600179176 /* WinController.swift */; };
+		B0EAD4292C36221F00179176 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAD4282C36221F00179176 /* FirebaseController.swift */; };
 		B0FD83CA2C318E62007D6540 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FD83C92C318E62007D6540 /* AppDelegate.swift */; };
 		B0FD83CC2C318E62007D6540 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FD83CB2C318E62007D6540 /* SceneDelegate.swift */; };
-		B0FD83CE2C318E62007D6540 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FD83CD2C318E62007D6540 /* ViewController.swift */; };
+		B0FD83CE2C318E62007D6540 /* LaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FD83CD2C318E62007D6540 /* LaunchController.swift */; };
 		B0FD83D12C318E62007D6540 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B0FD83D02C318E62007D6540 /* Base */; };
 		B0FD83D32C318E63007D6540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0FD83D22C318E63007D6540 /* Assets.xcassets */; };
 		B0FD83D62C318E63007D6540 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B0FD83D52C318E63007D6540 /* Base */; };
+		B0FD83E22C3193C9007D6540 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FD83E12C3193C9007D6540 /* GameController.swift */; };
+		B0FD83E42C319536007D6540 /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = B0FD83E32C319536007D6540 /* cards.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B0EAD4122C35DC1600179176 /* LocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
+		B0EAD4142C35ECE500179176 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		B0EAD4162C35F4CF00179176 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		B0EAD4182C35FCB500179176 /* GwentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GwentCard.swift; sourceTree = "<group>"; };
+		B0EAD41A2C35FCD000179176 /* GwentUICard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GwentUICard.swift; sourceTree = "<group>"; };
+		B0EAD41C2C35FD0200179176 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		B0EAD4262C3610C600179176 /* WinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinController.swift; sourceTree = "<group>"; };
+		B0EAD4282C36221F00179176 /* FirebaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
 		B0FD83C62C318E62007D6540 /* CardsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FD83C92C318E62007D6540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0FD83CB2C318E62007D6540 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B0FD83CD2C318E62007D6540 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0FD83CD2C318E62007D6540 /* LaunchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchController.swift; sourceTree = "<group>"; };
 		B0FD83D02C318E62007D6540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0FD83D22C318E63007D6540 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0FD83D52C318E63007D6540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0FD83D72C318E63007D6540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0FD83E12C3193C9007D6540 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		B0FD83E32C319536007D6540 /* cards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cards.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +57,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B0EAD4202C36104000179176 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0FD83CD2C318E62007D6540 /* LaunchController.swift */,
+				B0FD83E12C3193C9007D6540 /* GameController.swift */,
+				B0EAD4122C35DC1600179176 /* LocationController.swift */,
+				B0EAD4262C3610C600179176 /* WinController.swift */,
+				B0EAD4282C36221F00179176 /* FirebaseController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B0EAD4212C36105400179176 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0EAD41C2C35FD0200179176 /* Player.swift */,
+				B0EAD41A2C35FCD000179176 /* GwentUICard.swift */,
+				B0EAD4182C35FCB500179176 /* GwentCard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B0EAD4222C36107D00179176 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				B0FD83C92C318E62007D6540 /* AppDelegate.swift */,
+				B0FD83CB2C318E62007D6540 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		B0EAD4232C36108C00179176 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B0EAD4162C35F4CF00179176 /* Tools.swift */,
+				B0EAD4142C35ECE500179176 /* Toast.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B0EAD4242C36109E00179176 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B0FD83CF2C318E62007D6540 /* Main.storyboard */,
+				B0FD83D42C318E63007D6540 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B0EAD4252C3610AC00179176 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B0FD83E32C319536007D6540 /* cards.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		B0FD83BD2C318E62007D6540 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +133,13 @@
 		B0FD83C82C318E62007D6540 /* CardsGame */ = {
 			isa = PBXGroup;
 			children = (
-				B0FD83C92C318E62007D6540 /* AppDelegate.swift */,
-				B0FD83CB2C318E62007D6540 /* SceneDelegate.swift */,
-				B0FD83CD2C318E62007D6540 /* ViewController.swift */,
-				B0FD83CF2C318E62007D6540 /* Main.storyboard */,
+				B0EAD4252C3610AC00179176 /* Data */,
+				B0EAD4242C36109E00179176 /* Views */,
+				B0EAD4232C36108C00179176 /* Helpers */,
+				B0EAD4222C36107D00179176 /* Delegates */,
+				B0EAD4212C36105400179176 /* Models */,
+				B0EAD4202C36104000179176 /* Controllers */,
 				B0FD83D22C318E63007D6540 /* Assets.xcassets */,
-				B0FD83D42C318E63007D6540 /* LaunchScreen.storyboard */,
 				B0FD83D72C318E63007D6540 /* Info.plist */,
 			);
 			path = CardsGame;
@@ -128,6 +206,7 @@
 				B0FD83D32C318E63007D6540 /* Assets.xcassets in Resources */,
 				B0FD83D62C318E63007D6540 /* Base in Resources */,
 				B0FD83D12C318E62007D6540 /* Base in Resources */,
+				B0FD83E42C319536007D6540 /* cards.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +217,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0FD83CE2C318E62007D6540 /* ViewController.swift in Sources */,
+				B0FD83CE2C318E62007D6540 /* LaunchController.swift in Sources */,
+				B0EAD41B2C35FCD000179176 /* GwentUICard.swift in Sources */,
+				B0EAD4192C35FCB500179176 /* GwentCard.swift in Sources */,
+				B0EAD4152C35ECE500179176 /* Toast.swift in Sources */,
+				B0FD83E22C3193C9007D6540 /* GameController.swift in Sources */,
 				B0FD83CA2C318E62007D6540 /* AppDelegate.swift in Sources */,
+				B0EAD4172C35F4CF00179176 /* Tools.swift in Sources */,
+				B0EAD4272C3610C600179176 /* WinController.swift in Sources */,
+				B0EAD4132C35DC1600179176 /* LocationController.swift in Sources */,
+				B0EAD41D2C35FD0200179176 /* Player.swift in Sources */,
 				B0FD83CC2C318E62007D6540 /* SceneDelegate.swift in Sources */,
+				B0EAD4292C36221F00179176 /* FirebaseController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -64,12 +64,12 @@ class GameController: UIViewController {
         
         if (playerSide=="East"){
             print("Player is on the left, AI on the right")
-            leftPlayer.setName(name: "Player")
+            leftPlayer.setName(name: playerName!)
             rightPlayer.setName(name: "AI")
             
         }else{
             print("Player is on the right, AI is on the left")
-            rightPlayer.setName(name: "Player")
+            rightPlayer.setName(name: playerName!)
             leftPlayer.setName(name: "AI")
         }
         
@@ -138,7 +138,7 @@ class GameController: UIViewController {
      This function will handle the current turn
      */
     func handleTurn(index: Int){
-        Tools.showToast(message: "Handle turn: \(index)", time: 2, controller: self)
+        print("Handle turn: \(index)")
         let leftCard = leftPlayer.getDeck()[index]
         let rightCard = rightPlayer.getDeck()[index]
         leftPlayer.addScore(score: leftCard.power)
@@ -151,15 +151,22 @@ class GameController: UIViewController {
      */
     func finishGame(){
         print("Finishing game...\n")
-        var message = ""
         if(leftPlayer.getScore()>=rightPlayer.getScore()){
             print("Left player wins!")
-            message = "\(leftPlayer.getName()) wins with \(leftPlayer.getScore()) points!"
+            saveWinner(name: leftPlayer.getName(), score: leftPlayer.getScore())
         }else{
             print("Right player wins!")
-            message = "\(rightPlayer.getName()) wins with \(rightPlayer.getScore()) points!"
+            saveWinner(name: rightPlayer.getName(), score: rightPlayer.getScore())
         }
-        Tools.showToast(message: message, time: 10, controller: self)
+        Tools.moveToScene(scene: Tools.gameToWinTransition, controller: self)
+    }
+    
+    
+    
+    func saveWinner(name:String,score:Int){
+        print("saveWinner: \(name) \(score)")
+        Tools.saveToUserDefaults(key: Tools.winnerName, value: name)
+        Tools.saveToUserDefaults(key: Tools.winnerScore, value: score)
     }
     
     /**
